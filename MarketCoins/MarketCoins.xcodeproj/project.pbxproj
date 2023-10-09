@@ -13,6 +13,12 @@
 		2404ED4A2AD449AD00B52B90 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2404ED482AD449AD00B52B90 /* Main.storyboard */; };
 		2404ED4C2AD449AE00B52B90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2404ED4B2AD449AE00B52B90 /* Assets.xcassets */; };
 		2404ED4F2AD449AE00B52B90 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2404ED4D2AD449AE00B52B90 /* LaunchScreen.storyboard */; };
+		2404ED5A2AD44C0400B52B90 /* CoinModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2404ED592AD44C0400B52B90 /* CoinModel.swift */; };
+		2404ED5C2AD44E8800B52B90 /* CurrentDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2404ED5B2AD44E8800B52B90 /* CurrentDataModel.swift */; };
+		2404ED5E2AD455C600B52B90 /* MarketChartModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2404ED5D2AD455C600B52B90 /* MarketChartModel.swift */; };
+		2404ED602AD456B300B52B90 /* GraphicDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2404ED5F2AD456B300B52B90 /* GraphicDataModel.swift */; };
+		2404ED622AD4571B00B52B90 /* GlobalModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2404ED612AD4571B00B52B90 /* GlobalModel.swift */; };
+		2404ED662AD4593600B52B90 /* GenericDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2404ED652AD4593600B52B90 /* GenericDataProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,12 @@
 		2404ED4B2AD449AE00B52B90 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2404ED4E2AD449AE00B52B90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2404ED502AD449AE00B52B90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2404ED592AD44C0400B52B90 /* CoinModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinModel.swift; sourceTree = "<group>"; };
+		2404ED5B2AD44E8800B52B90 /* CurrentDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentDataModel.swift; sourceTree = "<group>"; };
+		2404ED5D2AD455C600B52B90 /* MarketChartModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketChartModel.swift; sourceTree = "<group>"; };
+		2404ED5F2AD456B300B52B90 /* GraphicDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphicDataModel.swift; sourceTree = "<group>"; };
+		2404ED612AD4571B00B52B90 /* GlobalModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalModel.swift; sourceTree = "<group>"; };
+		2404ED652AD4593600B52B90 /* GenericDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericDataProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +52,7 @@
 		2404ED362AD449AD00B52B90 = {
 			isa = PBXGroup;
 			children = (
+				2404ED562AD44AAD00B52B90 /* Domain */,
 				2404ED412AD449AD00B52B90 /* MarketCoins */,
 				2404ED402AD449AD00B52B90 /* Products */,
 			);
@@ -65,6 +78,43 @@
 				2404ED502AD449AE00B52B90 /* Info.plist */,
 			);
 			path = MarketCoins;
+			sourceTree = "<group>";
+		};
+		2404ED562AD44AAD00B52B90 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				2404ED632AD458F900B52B90 /* DataProvider */,
+				2404ED582AD44AE500B52B90 /* Models */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		2404ED582AD44AE500B52B90 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2404ED592AD44C0400B52B90 /* CoinModel.swift */,
+				2404ED5B2AD44E8800B52B90 /* CurrentDataModel.swift */,
+				2404ED5D2AD455C600B52B90 /* MarketChartModel.swift */,
+				2404ED5F2AD456B300B52B90 /* GraphicDataModel.swift */,
+				2404ED612AD4571B00B52B90 /* GlobalModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2404ED632AD458F900B52B90 /* DataProvider */ = {
+			isa = PBXGroup;
+			children = (
+				2404ED642AD4591600B52B90 /* NetworkRepository */,
+				2404ED652AD4593600B52B90 /* GenericDataProvider.swift */,
+			);
+			path = DataProvider;
+			sourceTree = "<group>";
+		};
+		2404ED642AD4591600B52B90 /* NetworkRepository */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NetworkRepository;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +188,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2404ED5E2AD455C600B52B90 /* MarketChartModel.swift in Sources */,
+				2404ED5A2AD44C0400B52B90 /* CoinModel.swift in Sources */,
+				2404ED602AD456B300B52B90 /* GraphicDataModel.swift in Sources */,
 				2404ED472AD449AD00B52B90 /* ViewController.swift in Sources */,
 				2404ED432AD449AD00B52B90 /* AppDelegate.swift in Sources */,
+				2404ED5C2AD44E8800B52B90 /* CurrentDataModel.swift in Sources */,
+				2404ED622AD4571B00B52B90 /* GlobalModel.swift in Sources */,
+				2404ED662AD4593600B52B90 /* GenericDataProvider.swift in Sources */,
 				2404ED452AD449AD00B52B90 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -290,11 +346,13 @@
 				DEVELOPMENT_TEAM = 2T9YAV5VRP;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MarketCoins/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,9 +360,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = dio.MarketCoins;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -318,11 +379,13 @@
 				DEVELOPMENT_TEAM = 2T9YAV5VRP;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MarketCoins/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -330,9 +393,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = dio.MarketCoins;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
