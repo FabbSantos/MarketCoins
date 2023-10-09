@@ -19,6 +19,11 @@
 		2404ED602AD456B300B52B90 /* GraphicDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2404ED5F2AD456B300B52B90 /* GraphicDataModel.swift */; };
 		2404ED622AD4571B00B52B90 /* GlobalModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2404ED612AD4571B00B52B90 /* GlobalModel.swift */; };
 		2404ED662AD4593600B52B90 /* GenericDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2404ED652AD4593600B52B90 /* GenericDataProvider.swift */; };
+		2404ED6C2AD45D8D00B52B90 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2404ED6B2AD45D8D00B52B90 /* API.swift */; };
+		2404ED702AD45E9B00B52B90 /* GenericStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2404ED6F2AD45E9B00B52B90 /* GenericStore.swift */; };
+		2404ED722AD460FB00B52B90 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2404ED712AD460FB00B52B90 /* Extensions.swift */; };
+		2404ED742AD4637700B52B90 /* CoinsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2404ED732AD4637700B52B90 /* CoinsRouter.swift */; };
+		2404ED762AD4638400B52B90 /* GlobalRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2404ED752AD4638400B52B90 /* GlobalRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +41,11 @@
 		2404ED5F2AD456B300B52B90 /* GraphicDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphicDataModel.swift; sourceTree = "<group>"; };
 		2404ED612AD4571B00B52B90 /* GlobalModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalModel.swift; sourceTree = "<group>"; };
 		2404ED652AD4593600B52B90 /* GenericDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericDataProvider.swift; sourceTree = "<group>"; };
+		2404ED6B2AD45D8D00B52B90 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		2404ED6F2AD45E9B00B52B90 /* GenericStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericStore.swift; sourceTree = "<group>"; };
+		2404ED712AD460FB00B52B90 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		2404ED732AD4637700B52B90 /* CoinsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinsRouter.swift; sourceTree = "<group>"; };
+		2404ED752AD4638400B52B90 /* GlobalRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +86,7 @@
 				2404ED4B2AD449AE00B52B90 /* Assets.xcassets */,
 				2404ED4D2AD449AE00B52B90 /* LaunchScreen.storyboard */,
 				2404ED502AD449AE00B52B90 /* Info.plist */,
+				2404ED712AD460FB00B52B90 /* Extensions.swift */,
 			);
 			path = MarketCoins;
 			sourceTree = "<group>";
@@ -113,8 +124,36 @@
 		2404ED642AD4591600B52B90 /* NetworkRepository */ = {
 			isa = PBXGroup;
 			children = (
+				2404ED6A2AD45D8000B52B90 /* Store */,
+				2404ED692AD45D7300B52B90 /* Router */,
+				2404ED682AD45D6900B52B90 /* API */,
 			);
 			path = NetworkRepository;
+			sourceTree = "<group>";
+		};
+		2404ED682AD45D6900B52B90 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				2404ED6B2AD45D8D00B52B90 /* API.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		2404ED692AD45D7300B52B90 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				2404ED732AD4637700B52B90 /* CoinsRouter.swift */,
+				2404ED752AD4638400B52B90 /* GlobalRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		2404ED6A2AD45D8000B52B90 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				2404ED6F2AD45E9B00B52B90 /* GenericStore.swift */,
+			);
+			path = Store;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,9 +229,14 @@
 			files = (
 				2404ED5E2AD455C600B52B90 /* MarketChartModel.swift in Sources */,
 				2404ED5A2AD44C0400B52B90 /* CoinModel.swift in Sources */,
+				2404ED742AD4637700B52B90 /* CoinsRouter.swift in Sources */,
+				2404ED762AD4638400B52B90 /* GlobalRouter.swift in Sources */,
 				2404ED602AD456B300B52B90 /* GraphicDataModel.swift in Sources */,
+				2404ED702AD45E9B00B52B90 /* GenericStore.swift in Sources */,
 				2404ED472AD449AD00B52B90 /* ViewController.swift in Sources */,
+				2404ED6C2AD45D8D00B52B90 /* API.swift in Sources */,
 				2404ED432AD449AD00B52B90 /* AppDelegate.swift in Sources */,
+				2404ED722AD460FB00B52B90 /* Extensions.swift in Sources */,
 				2404ED5C2AD44E8800B52B90 /* CurrentDataModel.swift in Sources */,
 				2404ED622AD4571B00B52B90 /* GlobalModel.swift in Sources */,
 				2404ED662AD4593600B52B90 /* GenericDataProvider.swift in Sources */,
