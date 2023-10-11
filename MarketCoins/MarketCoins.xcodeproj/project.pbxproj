@@ -27,6 +27,7 @@
 		24071FD22AD4C15A00B7C532 /* CoinStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24071FD12AD4C15900B7C532 /* CoinStore.swift */; };
 		24071FD42AD4C16100B7C532 /* GlobalStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24071FD32AD4C16100B7C532 /* GlobalStore.swift */; };
 		24071FD72AD4C84C00B7C532 /* ListCoinsDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24071FD62AD4C84C00B7C532 /* ListCoinsDataProvider.swift */; };
+		249295DE2AD5E1D1006DE559 /* GlobalValuesDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249295DD2AD5E1D1006DE559 /* GlobalValuesDataProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		24071FD12AD4C15900B7C532 /* CoinStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinStore.swift; sourceTree = "<group>"; };
 		24071FD32AD4C16100B7C532 /* GlobalStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalStore.swift; sourceTree = "<group>"; };
 		24071FD62AD4C84C00B7C532 /* ListCoinsDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCoinsDataProvider.swift; sourceTree = "<group>"; };
+		249295DD2AD5E1D1006DE559 /* GlobalValuesDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalValuesDataProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +123,7 @@
 		2404ED632AD458F900B52B90 /* DataProvider */ = {
 			isa = PBXGroup;
 			children = (
+				249295DC2AD5E1C0006DE559 /* GlobalValueDataProvider */,
 				24071FD52AD4C83B00B7C532 /* CoinsDataProvider */,
 				2404ED642AD4591600B52B90 /* NetworkRepository */,
 				2404ED652AD4593600B52B90 /* GenericDataProvider.swift */,
@@ -171,6 +174,14 @@
 				24071FD62AD4C84C00B7C532 /* ListCoinsDataProvider.swift */,
 			);
 			path = CoinsDataProvider;
+			sourceTree = "<group>";
+		};
+		249295DC2AD5E1C0006DE559 /* GlobalValueDataProvider */ = {
+			isa = PBXGroup;
+			children = (
+				249295DD2AD5E1D1006DE559 /* GlobalValuesDataProvider.swift */,
+			);
+			path = GlobalValueDataProvider;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,6 +264,7 @@
 				2404ED602AD456B300B52B90 /* GraphicDataModel.swift in Sources */,
 				2404ED702AD45E9B00B52B90 /* GenericStore.swift in Sources */,
 				2404ED472AD449AD00B52B90 /* ViewController.swift in Sources */,
+				249295DE2AD5E1D1006DE559 /* GlobalValuesDataProvider.swift in Sources */,
 				2404ED6C2AD45D8D00B52B90 /* API.swift in Sources */,
 				2404ED432AD449AD00B52B90 /* AppDelegate.swift in Sources */,
 				24071FD42AD4C16100B7C532 /* GlobalStore.swift in Sources */,
